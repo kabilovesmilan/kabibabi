@@ -1,113 +1,67 @@
-<!DOCTYPE html>
 <html>
-<head>
-<title>Mivirex AG</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
-<body>
+	<title>Hasbulla Fan Page | Home</title>
+		  <link rel="icon" type="image/x-icon" href="/img/Download.png">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="all.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/0dfdec2c7e.js"></script>
+<img class="logo" src="img/has.png">
+<img class="backguy" src="img/hasbz.png">
 
 
+	
+<ul class="menu">
+    <li class="menuitem" onclick="openLink('start')" style="border-color: #8a1a04">Start</li>
+    <li class="menuitem" onclick="openLink('rules')" >Regeln</li>
+    <li class="menuitem" onclick="openLink('member')" >Members</li>
+    <li class="menuitem" onclick="openLink('contact')" >Kontakt</li>
+</ul>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-<div class="w3-bar w3-white w3-wide w3-padding w3-card">
-<a href="#home" class="w3-bar-item w3-button"></b><strong> Mivirex AG</strong></a>
-<!-- Float links to the right. Hide them on small screens -->
-<div class="w3-right w3-hide-small">
-<a href="#about" class="w3-bar-item w3-button">About</a>
-<a href="#contact" class="w3-bar-item w3-button">Contact</a>
-</div>
-</div>
-</div>
-
-
-
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-<img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
-<div class="w3-display-middle w3-margin-top w3-center">
-<h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>MIVIREX AG</b></span></h1>
-</div>
-</header>
-
-
-
-<!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
-
-
-
-<!-- About Section -->
-<div class="w3-container w3-padding-32" id="about">
-<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-<p>Herzlich Willkomen zu unsere Website!
-</p>
+<div class="maintext">
+    <div class="title">Hasbulla <br><w style="color: #8a1a04">Fan Page</w></div>
+    <div class="description">Gemacht von Kabilas, Milan und Elmaz</div>
+    <div class="button1" onclick="openLink('member')">Member werden</div>
 </div>
 
+<div class="bar">
+    <div class="sec1">
+        <div class="sec1time">3:13</div>
+        <div class="sec1title">Uhrzeit Bern</div>
+    </div>
 
+    <div class="sec2">
+        <div class="sectitle">Milan</div>
+        <div class="secsubtitle">Tabacki</div>
+        <div class="secip" id="first" onclick="openLink('first')">btabam@bbcag.ch</div><i onclick="copyText('first')" class="grey1 far fa-copy"></i>
+        <div class="secbarfull">
+            <div class="secinbar"></div>
+        </div>
 
-<div class="w3-row-padding w3-grayscale">
-<div class="w3-col l3 m6 w3-margin-bottom">
-<img src="https://p16-sign-sg.tiktokcdn.com/aweme/720x720/tos-alisg-avt-0068/c8fe17d6a588c99c23f1f7abe6917436.jpeg?x-expires=1653062400&x-signature=d2HWA3jdeWTg2KV6SGEA7EdWqoA%3D" alt="John" style="width:90%">
-<h3>Milan Tabacki</h3>
-<p class="w3-opacity">CEO & Founder</p>
-<p><button class="w3-button w3-light-blue w3-block">Contact</button></p>
+        <div class="secbadge">CEO</div>
+    </div>
+
+    <div class="sec3">
+        <div class="sectitle">Elmaz</div>
+        <div class="secsubtitle blue">Rexhepi</div>
+        <div class="secip blue" id="second" onclick="openLink('second')">brexhe@bbcag.ch</div><i onclick="copyText('second')" class="grey2 far fa-copy"></i>
+        <div class="secbarfull">
+            <div class="secinbar bluebg"></div>
+        </div>
+
+        <div class="secbadge bluebg">CEO</div>
+    </div>
+
+    <div class="sec4">
+        <div class="sectitle">Kabilas</div>
+        <div class="secsubtitle pink">Vivekananthan</div>
+        <div class="secip pink" id="third" onclick="openLink('third')">bvivek@bbcag.ch</div><i onclick="copyText('third')" class="grey3 far fa-copy"></i>
+        <div class="secbarfull">
+            <div class="secinbar pinkbg"></div>
+        </div>
+
+        <div class="secbadge pinkbg">CEO</div>
+    </div>
 </div>
-<div class="w3-col l3 m6 w3-margin-bottom">
-<img src="https://i.pinimg.com/564x/00/66/0f/00660f73b9896fda29d67ceb9f32ae1f.jpg" alt="Jane" style="width:90%">
-<h3>Elmaz Rexhepi</h3>
-<p class="w3-opacity">CEO & Founder</p>
-<p><button class="w3-button w3-light-blue w3-block">Contact</button></p>
-</div>
-<div class="w3-col l3 m6 w3-margin-bottom">
-<img src="https://image.geo.de/30086896/t/Mz/v3/w1440/r1/-/einstein-gross-jpg--41890-.jpg" alt="Mike" style="width:90%">
-<h3>Kabilas Vivekananthan</h3>
-<p class="w3-opacity">CEO & Founder</p>
-<p><button class="w3-button w3-light-blue w3-block">Contact</button></p>
-</div>
-</div>
-
-
-
-<!-- Contact Section -->
-<div class="w3-container w3-padding-32" id="contact">
-<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-<p>Lets get in touch and talk about your next project.</p>
-<form action="/action_page.php" target="_blank">
-<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-<input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-<input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-<input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-<button class="w3-button w3-white w3-section" type="submit">
-<i class="fa fa-paper-plane"></i> SEND MESSAGE
-</button>
-</form>
-</div>
-
-<!-- Image of location/map -->
-<div class="w3-container">
-<img src="https://nextgeneration.mysign.ch/upload/rm/u8nwesks55tsyxv-8.png?_=1610979423000" class="w3-image" style="width:75%">
-</div>
-
-
-
-<!-- End page content -->
-</div>
-
-
-
-<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-primary">Click here for 50$</a>
-
-
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-<p>Powered by <a href="https://www.bbcag.ch" title="Bbc AG" target="_blank" class="w3-hover-text-blue">Bbc AG</a></p>
-</footer>
-
-
-
-</body>
 </html>
